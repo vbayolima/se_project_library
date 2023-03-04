@@ -11,9 +11,7 @@
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
-  padding-top: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 30px 80px 0;
   position: relative;
   box-sizing: border-box;
 }
@@ -54,6 +52,7 @@
   line-height: 76px;
   font-weight: 500;
   margin-top: 150px;
+  margin-bottom: 0;
 }
 
 .header__description {
@@ -138,7 +137,7 @@
 .event-info__icon {
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 12px;
+  gap: 12px;
   width: 24px;
   height: 24px;
 }
@@ -242,8 +241,9 @@
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
-  background-image: url("/images/staff_picks_background.jpg");
-  background-size: contain;
+  background-image: url("../images/staff_picks_background.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 .staff__title {
@@ -390,6 +390,10 @@
   margin-bottom: 32px;
 }
 
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -410,7 +414,6 @@
 }
 
 .footer__columns {
-  min-height: 224px;
   display: flex;
 }
 
